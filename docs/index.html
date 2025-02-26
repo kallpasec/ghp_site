@@ -15,14 +15,31 @@
             color: #ffffff;
             font-family: 'Arial';
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
         img {
-            max-width: 800px;
+            max-width: 90%;
+            height: auto;
         }
         h1 {
             font-size: 2rem;
             margin-top: 20px;
             font-weight: bold;
+            max-width: 90%;
+        }
+        @media (max-width: 768px) {
+            body {
+                justify-content: flex-start;
+                height: auto;
+                padding-top: 20vh;
+            }
+            img {
+                max-width: 80%;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
